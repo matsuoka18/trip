@@ -1,0 +1,175 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: Arial;
+}
+.main{
+position:relative;
+}
+.main .img1{
+    width:100vw;
+    height:auto;
+}
+.main .theme1{
+    position:absolute;
+    top:20vh;
+    left:40vw;
+}
+.main p{
+    
+    width:20vw;
+    text-align:center;
+    font-size:5vw;
+    margin:0;
+    padding:0;
+    color:white;
+}
+.main .p1{
+    position:absolute;
+    opacity: 0;
+
+}
+.main .p2{
+    position:absolute;
+    top:7vh;
+    opacity: 0;
+    
+}
+.main .border{
+    position: absolute;
+    top:5vh;
+    opacity:0;
+    height:0.5vw;
+    background-color: white;
+}
+button{
+    width:20vw;
+    height:10vw;
+}
+.main .theme2{
+    position: absolute;
+    top:25vh;
+}
+.main .theme2 div{
+    
+    opacity: 1;
+}
+.main .theme2 .d1,.d2{
+border-bottom:0.5vw solid white;
+ height:0.5vw;
+}
+.main .theme2 .d3,.d4{
+    
+    width:0.5vw;   
+    opacity: 1;
+}
+.main .theme2  .d1{
+    position:absolute;
+    top:-10vh;
+    left:10vw;
+}
+.main .theme2  .d2{
+    transform: rotate(180deg);
+    position:absolute;
+    top:10vh;
+    left:10vw;
+}
+.main .theme2  .d3{
+    border-right:0.5vw solid white;
+    transform: rotate(180deg);
+    position:absolute;
+    top:-9vh;
+    left:10vw;
+}
+.main .theme2  .d4{
+    border-left:0.5vw solid white;
+    position:absolute;
+    top:-9.5vh;
+    left:90vw;
+}
+
+
+.main2{
+    position:relative;
+    }
+    .main2 .img1{
+        width:100vw;
+        height:auto;
+    }
+    .main2 .theme1{
+        position:absolute;
+        top:20vh;
+        left:40vw;
+    }
+    .main2 p{
+        
+        width:20vw;
+        text-align:center;
+        font-size:5vw;
+        margin:0;
+        padding:0;
+        color:white;
+    }
+    .main2 .p1{
+        position:absolute;
+        opacity: 0;
+    
+    }
+    .main2 .p2{
+        position:absolute;
+        top:7vh;
+        opacity: 0;
+        
+    }
+    .main2 .border{
+        position: absolute;
+        top:5vh;
+        opacity: 0;
+        height:0.5vw;
+        background-color: white;
+    }
+    button{
+        width:20vw;
+        height:10vw;
+    }
+    .main2 .theme2{
+        position: absolute;
+        top:25vh;
+    }
+    .main2 .theme2 div{
+        
+        opacity: 1;
+    }
+    .main2 .theme2 .d1,.d2{
+    border-bottom:0.5vw solid white;
+     height:0.5vw;
+    }
+    .main2 .theme2 .d3,.d4{
+        
+        width:0.5vw;   
+        opacity: 1;
+    }
+    .main2 .theme2  .d1{
+        position:absolute;
+        top:-10vh;
+        left:10vw;
+    }
+    .main2 .theme2  .d2{
+        transform: rotate(180deg);
+        position:absolute;
+        top:10vh;
+        left:10vw;
+    }
+    .main2 .theme2  .d3{
+        border-right:0.5vw solid white;
+        transform: rotate(180deg);
+        position:absolute;
+        top:-9vh;
+        left:10vw;
+    }
+    .main2 .theme2  .d4{
+        border-left:0.5vw solid white;
+        position:absolute;
+        top:-9.5vh;
+        left:90vw;
+    }
