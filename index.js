@@ -379,3 +379,19 @@ $("#swipe33").animate({
     'duration':2000
 })
 }
+function scrollout(){
+   $("#theme11").animate({
+     'width':0,
+     'left':'80vw',
+     'opacity':0
+    },{
+      'duration':2000
+    })
+    setTimeout(()=>{
+      document.getElementById("theme11").style.display = "none";
+    },2000)
+    
+}
+function b1(){
+scrollout();
+}

@@ -144,7 +144,26 @@ border-bottom:0.5vw solid white;
     margin-top:1vw;
     border-bottom:0.4vw solid white;
 }
+.main .theme11 li:hover{
+   background:rgba(255, 255 ,255 , 0.15);
+   font-weight:600;
+}
 .main .theme11 h4{
+    font-size:4.5vw;
+    border-bottom:0.5vw solid white;
+    padding-bottom:2vh;
+    padding-left:7.5vw;
+    padding-right:7.5vw;
+    text-align: center;
+    width:15vw;
+}
+.main .theme111{
+    position:absolute;
+    top:0;
+    left:5vw;
+    color:white;
+}
+.main .theme111 h4{
     font-size:4.5vw;
     border-bottom:0.5vw solid white;
     padding-bottom:2vh;
