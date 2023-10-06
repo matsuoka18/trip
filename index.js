@@ -114,7 +114,22 @@ function start2(){
               },{
                 'duration':2000
              })
+             $("#im").animate({
+              'width':'60vw'
+           },{
+            'duration':2000
            })
+           $("#swipe2").animate({
+            'opacity':1
+         },{
+          'duration':2000
+         })
+         $("#swipe3").animate({
+          'opacity':1
+       },{
+        'duration':2000
+       })
+           },2000)
          },2000)
 }
 function start1(){
@@ -218,7 +233,149 @@ function start22(){
               },{
                 'duration':2000
              })
+             $("#im2").animate({
+              'width':'60vw'
+           },{
+            'duration':1000
            })
+           $("#swipe22").animate({
+            'opacity':1
+         },{
+          'duration':1500
+         })
+         $("#swipe33").animate({
+          'opacity':1
+       },{
+        'duration':1500
+       })
+           },2000)
          },2000)
 }
 
+document.getElementById("swipe").addEventListener('touchmove',logswipe);
+document.getElementById("swipe").addEventListener('touchstart',logswipestart);
+document.getElementById("swipe").addEventListener('touchend',logswipeend);
+document.getElementById("swipee").addEventListener('touchmove',logswipe2);
+document.getElementById("swipee").addEventListener('touchstart',logswipestart2);
+document.getElementById("swipee").addEventListener('touchend',logswipeend2);
+
+function logswipestart(event){
+  event.preventDefault();
+  startx = event.touches[0].pageX;
+}
+function logswipe(event){
+event.preventDefault();
+endx = event.touches[0].pageX;
+}
+function logswipeend(event){
+event.preventDefault();
+if(0 < endx-startx){
+  scroll();
+}else{
+  console.log("2")
+}
+}
+function logswipestart2(event){
+  event.preventDefault();
+  startx = event.touches[0].pageX;
+}
+function logswipe2(event){
+event.preventDefault();
+endx = event.touches[0].pageX;
+}
+function logswipeend2(event){
+event.preventDefault();
+if(0 < endx-startx){
+  scroll2();
+}else{
+  console.log("2")
+}
+}
+function scroll(){
+  $("#border").animate({
+    'left':'40vw',
+    'width':0,
+    'opacity':0
+},{
+    'duration':2000
+})
+$("#p1").animate({
+  'left':'40vw',
+  
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#p2").animate({
+  'left':'40vw',
+  
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#im").animate({
+  'left':'40vw',
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#swipe2").animate({
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#swipe3").animate({
+  'opacity':0
+},{
+    'duration':2000
+})
+setTimeout(()=>{
+$("#theme11").animate({
+ 'width':0
+},{
+  'duration':0
+})
+$("#theme11").animate({
+  'width':'80vw',
+  'opacity':1
+ },{
+   'duration':2000
+ })
+},2000)
+}
+function scroll2(){
+  $("#border2").animate({
+    'left':'-40vw',
+    'opacity':0
+},{
+    'duration':2000
+})
+$("#p11").animate({
+  'left':'-40vw',
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#p22").animate({
+  'left':'-40vw',
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#im2").animate({
+  'left':'40vw',
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#swipe22").animate({
+  'opacity':0
+},{
+    'duration':2000
+})
+$("#swipe33").animate({
+  'opacity':0
+},{
+    'duration':2000
+})
+}
