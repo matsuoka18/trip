@@ -3,7 +3,6 @@ url = "https://script.google.com/macros/s/AKfycbzTopcGzYj97auh11Ilq5dLM2QyAop3ey
 function start(){
     console.log("start START");
     cookie = document.cookie;
-    cookie = 'message=b1-';
     c_check = cookie.indexOf("message=");
     c_check2 = cookie.indexOf("-",c_check);
     if(c_check == -1){
