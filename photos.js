@@ -79,10 +79,10 @@ document.getElementById("p1").innerHTML = theme;
 document.getElementById("p3").innerHTML = theme2;
 for(var a = 4; a<last; a++){
 pic = data[a];
-datas = "<img src="+"\""+"/media/kazuya1834/13B8-4253/京都 2023 10月1日〜10月3日/"+pic+".jpg"+"\""+">";
+datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">";
 div.insertAdjacentHTML("beforeend",datas);
 }
-datas = "<img src="+"\""+"/media/kazuya1834/13B8-4253/京都 2023 10月1日〜10月3日/"+best+".jpg"+"\""+"class="+"\""+"best"+"\""+">";
+datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+"class="+"\""+"best"+"\""+">";
 div.insertAdjacentHTML("afterbegin",datas);
 setTimeout(anit,1000);
 }
