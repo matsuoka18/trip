@@ -2,8 +2,7 @@ message = '';
 url = "https://script.google.com/macros/s/AKfycbzTopcGzYj97auh11Ilq5dLM2QyAop3eyXqPALpWAfcRyalILr09k9a4zgesPl-8agY/exec";
 function start(){
     console.log("start START");
-    //cookie = document.cookie;
-    cookie = 'message=b1;'
+    cookie = document.cookie;
     c_check = cookie.indexOf("message=");
     c_check2 = cookie.indexOf(";",c_check);
     if(c_check == -1){
@@ -70,11 +69,15 @@ last = data.length;
 console.log("last:"+last);
 code = data[0];
 theme = data[1];
+theme2 = data[3];
 best = data[2];
 console.log(code);
 console.log(theme);
+console.log(theme2);
 console.log(best);
-for(var a = 3; a<last; a++){
+document.getElementById("p1").innerHTML = theme;
+document.getElementById("p3").innerHTML = theme2;
+for(var a = 4; a<last; a++){
 pic = data[a];
 datas = "<img src="+"\""+"/media/kazuya1834/13B8-4253/京都 2023 10月1日〜10月3日/"+pic+".jpg"+"\""+">";
 div.insertAdjacentHTML("beforeend",datas);

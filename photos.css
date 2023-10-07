@@ -21,6 +21,7 @@ img{
     width:100vw;
     height:30vh;
     z-index:100;
+    color:white;
 }
 .theme p{
 width:100vw;
@@ -33,7 +34,7 @@ opacity: 0;
 .theme div{
 width:0vw;
 margin-left:0vw;
-border-bottom:0.5vw solid black;
+border-bottom:0.5vw solid white;
 }
 .load{
     position:relative;
