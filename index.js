@@ -363,20 +363,34 @@ $("#p22").animate({
     'duration':2000
 })
 $("#im2").animate({
+},{
+    'duration':1000
+})
+$("#swipe22").animate({
+
+},{
+    'duration':1000
+})
+$("#swipe33").animate({
+
+},{
+    'duration':1000
+})
+$("#im2").animate({
   'left':'40vw',
   'opacity':0
 },{
-    'duration':2000
+    'duration':1000
 })
 $("#swipe22").animate({
   'opacity':0
 },{
-    'duration':2000
+    'duration':1000
 })
 $("#swipe33").animate({
   'opacity':0
 },{
-    'duration':2000
+    'duration':1000
 })
 }
 function scrollout(){
@@ -389,9 +403,64 @@ function scrollout(){
     })
     setTimeout(()=>{
       document.getElementById("theme11").style.display = "none";
+      location.href="photos.html";
     },2000)
     
 }
+
 function b1(){
-scrollout();
+  scrollout();
+  document.cookie="message=b1;"
+}
+function b2(){
+  scrollout();
+  document.cookie="message=b2;"
+}
+function b3(){
+  scrollout();
+  document.cookie="message=b3;"
+}
+function b4(){
+  scrollout();
+  document.cookie="message=b4;"
+}
+function b5(){
+  scrollout();
+  document.cookie="message=b5;"
+}
+function b7(){
+  scrollout();
+  document.cookie="message=b7;"
+}
+function b8(){
+  scrollout();
+  document.cookie="message=b8;"
+}
+function b9(){
+  scrollout();
+  document.cookie="message=b9;"
+}
+function b10(){
+  scrollout();
+  document.cookie="message=b10;"
+}
+function b11(){
+  scrollout();
+  document.cookie="message=b11;"
+}
+function b12(){
+  scrollout();
+  document.cookie="message=b12;"
+}
+function b13(){
+  scrollout();
+  document.cookie="message=b13;"
+}
+function b14(){
+  scrollout();
+  document.cookie="message=b14;"
+}
+function b15(){
+  scrollout();
+  document.cookie="message=b15;"
 }
