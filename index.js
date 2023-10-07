@@ -409,58 +409,71 @@ function scrollout(){
 }
 
 function b1(){
-  scrollout();
   document.cookie="message=b1;"
+  scrollout(); 
 }
 function b2(){
-  scrollout();
+  
   document.cookie="message=b2;"
+  scrollout();
 }
 function b3(){
-  scrollout();
+
   document.cookie="message=b3;"
+  scrollout();
 }
 function b4(){
-  scrollout();
+  
   document.cookie="message=b4;"
+  scrollout();
 }
 function b5(){
-  scrollout();
+  
   document.cookie="message=b5;"
+  scrollout();
 }
 function b7(){
-  scrollout();
+  
   document.cookie="message=b7;"
+  scrollout();
 }
 function b8(){
-  scrollout();
+  
   document.cookie="message=b8;"
+  scrollout();
 }
 function b9(){
-  scrollout();
+  
   document.cookie="message=b9;"
+  scrollout();
 }
 function b10(){
-  scrollout();
+ 
   document.cookie="message=b10;"
+  scrollout();
 }
 function b11(){
-  scrollout();
+  
   document.cookie="message=b11;"
+  scrollout();
 }
 function b12(){
-  scrollout();
+  
   document.cookie="message=b12;"
+  scrollout();
 }
 function b13(){
-  scrollout();
+  
   document.cookie="message=b13;"
+  scrollout();
 }
 function b14(){
-  scrollout();
+  
   document.cookie="message=b14;"
+  scrollout();
 }
 function b15(){
-  scrollout();
+  
   document.cookie="message=b15;"
+  scrollout();
 }
