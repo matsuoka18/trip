@@ -3,8 +3,9 @@ url = "https://script.google.com/macros/s/AKfycbzTopcGzYj97auh11Ilq5dLM2QyAop3ey
 function start(){
     console.log("start START");
     cookie = document.cookie;
+    cookie = 'message=b1-';
     c_check = cookie.indexOf("message=");
-    c_check2 = cookie.indexOf(";",c_check);
+    c_check2 = cookie.indexOf("-",c_check);
     if(c_check == -1){
         console.log("cookie Error");
     }else{
@@ -86,7 +87,7 @@ datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\"
 div.insertAdjacentHTML("afterbegin",datas);
 setTimeout(anit,1000);
 }
-function anit(){
+function anit(){2
     $("#p2").animate({
         'marginLeft':'40vw'
       },0)

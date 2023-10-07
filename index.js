@@ -409,71 +409,71 @@ function scrollout(){
 }
 
 function b1(){
-  document.cookie="message=b1;"
+  document.cookie="message=b1-"
   scrollout(); 
 }
 function b2(){
   
-  document.cookie="message=b2;"
+  document.cookie="message=b2-"
   scrollout();
 }
 function b3(){
 
-  document.cookie="message=b3;"
+  document.cookie="message=b3-"
   scrollout();
 }
 function b4(){
   
-  document.cookie="message=b4;"
+  document.cookie="message=b4-"
   scrollout();
 }
 function b5(){
   
-  document.cookie="message=b5;"
+  document.cookie="message=b5-"
   scrollout();
 }
 function b7(){
   
-  document.cookie="message=b7;"
+  document.cookie="message=b7-"
   scrollout();
 }
 function b8(){
   
-  document.cookie="message=b8;"
+  document.cookie="message=b8-"
   scrollout();
 }
 function b9(){
   
-  document.cookie="message=b9;"
+  document.cookie="message=b9-"
   scrollout();
 }
 function b10(){
  
-  document.cookie="message=b10;"
+  document.cookie="message=b10-"
   scrollout();
 }
 function b11(){
   
-  document.cookie="message=b11;"
+  document.cookie="message=b11-"
   scrollout();
 }
 function b12(){
   
-  document.cookie="message=b12;"
+  document.cookie="message=b12-"
   scrollout();
 }
 function b13(){
   
-  document.cookie="message=b13;"
+  document.cookie="message=b13-"
   scrollout();
 }
 function b14(){
   
-  document.cookie="message=b14;"
+  document.cookie="message=b14-"
   scrollout();
 }
 function b15(){
   
-  document.cookie="message=b15;"
+  document.cookie="message=b15-"
   scrollout();
 }
