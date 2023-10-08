@@ -80,7 +80,8 @@ document.getElementById("p1").innerHTML = theme;
 document.getElementById("p3").innerHTML = theme2;
 for(var a = 4; a<last; a++){
 pic = data[a];
-if(pic <= 700){
+pic2 = pic.replace("img","");
+if(pic2 <= 700){
 datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">";
 div.insertAdjacentHTML("beforeend",datas);
 }else{
@@ -88,7 +89,8 @@ div.insertAdjacentHTML("beforeend",datas);
 div.insertAdjacentHTML("beforeend",datas);
 }
 }
-if(best <= 700){
+best2 = best.replace("img","");
+if(best2 <= 700){
 datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+"class="+"\""+"best"+"\""+">";
 div.insertAdjacentHTML("afterbegin",datas);
 }else{
