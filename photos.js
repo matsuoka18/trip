@@ -3,6 +3,7 @@ url = "https://script.google.com/macros/s/AKfycbzTopcGzYj97auh11Ilq5dLM2QyAop3ey
 function start(){
     console.log("start START");
     cookie = document.cookie;
+    //cookie = 'message=b1-';
     c_check = cookie.indexOf("message=");
     c_check2 = cookie.indexOf("-",c_check);
     if(c_check == -1){
@@ -86,7 +87,7 @@ datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\"
 div.insertAdjacentHTML("afterbegin",datas);
 setTimeout(anit,1000);
 }
-function anit(){2
+function anit(){
     $("#p2").animate({
         'marginLeft':'40vw'
       },0)
@@ -120,7 +121,7 @@ function ani(){
       },0)
       $("#diving2").animate({
         'width':0,
-        'left':'60vw'
+        'left':'40vw'
       },0)
       $("#diving3").animate({
         'height':0,
@@ -128,29 +129,29 @@ function ani(){
       },0)
       $("#diving4").animate({
         'height':0,
-        'top':'30vh'
+        'top':'20vh'
       },0)
       $("#diving").animate({
-        'width':'60vw'
+        'width':'40vw'
       },1000)
       $("#diving2").animate({
-        'width':'60vw',
+        'width':'40vw',
         'left':'0vw'
       },1000)
       $("#diving3").animate({
-        'height':'30vh'
+        'height':'20vh'
       },1000)
       $("#diving4").animate({
-        'height':'30vh',
+        'height':'20vh',
         'top':'0vw'
       },1000)
       if(branch  == 1){
         $("#load").animate({
             'opacity':0
-          },100)    
+          },2000)    
       setTimeout(()=>{
         document.getElementById("load").display = "none";
-                  },100)
+                  },2000)
               }else{
                 setTimeout(ani2,1000);
               }
@@ -164,14 +165,14 @@ function ani2(){
       },500)    
     $("#diving").animate({
         'width':'0vw',
-        'left':'60vw'
+        'left':'40vw'
       },1000)
       $("#diving2").animate({
         'width':'0vw',
       },1000)
       $("#diving3").animate({
         'height':'0vh',
-        'top':'30vh'
+        'top':'20vh'
       },1000)
       $("#diving4").animate({
         'height':'0vh'
@@ -179,10 +180,10 @@ function ani2(){
       if(branch  == 1){
         $("#load").animate({
             'opacity':0
-          },100)    
+          },2000)    
           setTimeout(()=>{
 document.getElementById("load").display = "none";
-          },100)
+          },2000)
       }else{
       setTimeout(ani,1000)
       }
@@ -191,4 +192,26 @@ ki=0;
 function ko(){
     ki++;
     $("#p2").css("transform","rotate("+ki+"deg");
+}
+bcount = 0;
+bcheck = '';
+function back(){
+  bcount++;
+  if(bcount == 1){
+  $("#back").animate({
+    'width':"30vw"
+  },1000)
+  $("#backm").animate({
+    'width':"30vw"
+  },1000)
+  document.getElementById("backm").innerHTML = "‹ Back"
+  document.getElementById("backm").style.fontSize = "7.5vw"
+  setTimeout(()=>{
+    bcheck = "ok";
+  },1000)
+}else if(bcount >= 2 && bcheck == "ok"){{
+  document.cookie="message2=back-; max-age=5000";
+  location.href="index.html";
+}
+}
 }

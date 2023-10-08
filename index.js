@@ -477,3 +477,23 @@ function b15(){
   document.cookie="message=b15-"
   scrollout();
 }
+function bcheck(){
+  cookie = document.cookie;
+  //cookie = 'message=b1-,message2=back-';
+  c1 = cookie.indexOf("message2=");
+  if(c1 == -1){
+    console.log("New");
+  }else{
+    c2 = cookie.indexOf("-",c1);
+    data = cookie.substring(c1+9,c2);
+    console.log("back:"+data);
+    document.getElementById("theme11").style.display = "block";
+    document.getElementById("theme11").style.opacity = "1";
+    document.getElementById("theme1").style.display = "none";
+    document.getElementById("theme1").style.opacity = "0";
+    document.getElementById("theme2").style.display = "none";
+    document.getElementById("theme2").style.opacity = "0";
+    document.getElementById("swipe").style.opacity = "0";
+    document.getElementById("swipe").style.display = "none";
+  }
+}
