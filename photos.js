@@ -80,11 +80,21 @@ document.getElementById("p1").innerHTML = theme;
 document.getElementById("p3").innerHTML = theme2;
 for(var a = 4; a<last; a++){
 pic = data[a];
+if(pic <= 700){
 datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">";
 div.insertAdjacentHTML("beforeend",datas);
+}else{
+  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+pic+".jpg"+"\""+">";
+div.insertAdjacentHTML("beforeend",datas);
 }
+}
+if(best <= 700){
 datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+"class="+"\""+"best"+"\""+">";
 div.insertAdjacentHTML("afterbegin",datas);
+}else{
+  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+"class="+"\""+"best"+"\""+">";
+div.insertAdjacentHTML("afterbegin",datas);
+}
 setTimeout(anit,1000);
 }
 function anit(){
