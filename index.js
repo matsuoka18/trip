@@ -291,7 +291,9 @@ if(0 < endx-startx){
   console.log("2")
 }
 }
+place = '';
 function scroll(){
+  place = "kyoto";
   $("#border").animate({
     'left':'40vw',
     'width':0,
@@ -344,37 +346,25 @@ $("#theme11").animate({
 },2000)
 }
 function scroll2(){
+  place = "nara";
   $("#border2").animate({
-    'left':'-40vw',
+    'left':'40vw',
+    'width':0,
     'opacity':0
 },{
     'duration':2000
 })
 $("#p11").animate({
-  'left':'-40vw',
+  'left':'40vw',
   'opacity':0
 },{
     'duration':2000
 })
 $("#p22").animate({
-  'left':'-40vw',
+  'left':'40vw',
   'opacity':0
 },{
     'duration':2000
-})
-$("#im2").animate({
-},{
-    'duration':1000
-})
-$("#swipe22").animate({
-
-},{
-    'duration':1000
-})
-$("#swipe33").animate({
-
-},{
-    'duration':1000
 })
 $("#im2").animate({
   'left':'40vw',
@@ -392,6 +382,19 @@ $("#swipe33").animate({
 },{
     'duration':1000
 })
+setTimeout(()=>{
+  $("#theme22").animate({
+   'width':0
+  },{
+    'duration':0
+  })
+  $("#theme22").animate({
+    'width':'80vw',
+    'opacity':1
+   },{
+     'duration':2000
+   })
+  },2000)
 }
 function scrollout(){
    $("#theme11").animate({
@@ -401,50 +404,83 @@ function scrollout(){
     },{
       'duration':2000
     })
+    $("#theme22").animate({
+      'width':0,
+      'left':'80vw',
+      'opacity':0
+     },{
+       'duration':2000
+     })
     setTimeout(()=>{
       document.getElementById("theme11").style.display = "none";
+      document.getElementById("theme22").style.display = "none";
       location.href="photos.html";
     },2000)
     
 }
 
 function b1(){
+  if(place == 'kyoto'){
   document.cookie="message=b1-"
+  }else{
+    document.cookie="message=b16-"
+  }
   scrollout(); 
 }
 function b2(){
-  
+  if(place == 'kyoto'){
   document.cookie="message=b2-"
+  }else{
+    document.cookie="message=b17-"
+  }
   scrollout();
 }
 function b3(){
-
+  if(place == 'kyoto'){
   document.cookie="message=b3-"
+  }else{
+    document.cookie="message=b18-"
+  }
   scrollout();
 }
 function b4(){
-  
+  if(place == 'kyoto'){
   document.cookie="message=b4-"
+  }else{
+    document.cookie="message=b19-"
+  }
   scrollout();
 }
 function b5(){
-  
+  if(place == 'kyoto'){
   document.cookie="message=b5-"
+  }else{
+    document.cookie="message=b20-"
+  }
   scrollout();
 }
 function b7(){
-  
+  if(place == 'kyoto'){
   document.cookie="message=b7-"
+  }else{
+    document.cookie="message=b21-"
+  }
   scrollout();
 }
 function b8(){
-  
+  if(place == 'kyoto'){
   document.cookie="message=b8-"
+  }else{
+    document.cookie="message=b22-"
+  }
   scrollout();
 }
 function b9(){
-  
+  if(place == 'kyoto'){
   document.cookie="message=b9-"
+  }else{
+    document.cookie="message=b23-"
+  }
   scrollout();
 }
 function b10(){
@@ -495,5 +531,13 @@ function bcheck(){
     document.getElementById("theme2").style.opacity = "0";
     document.getElementById("swipe").style.opacity = "0";
     document.getElementById("swipe").style.display = "none";
+    document.getElementById("theme22").style.display = "block";
+    document.getElementById("theme22").style.opacity = "1";
+    document.getElementById("theme2").style.display = "none";
+    document.getElementById("theme2").style.opacity = "0";
+    document.getElementById("theme22").style.display = "none";
+    document.getElementById("theme22").style.opacity = "0";
+    document.getElementById("swipee").style.opacity = "0";
+    document.getElementById("swipee").style.display = "none";
   }
 }

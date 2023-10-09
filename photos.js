@@ -81,21 +81,33 @@ document.getElementById("p3").innerHTML = theme2;
 for(var a = 4; a<last; a++){
 pic = data[a];
 pic2 = pic.replace("img","");
-if(pic2 <= 700){
+if(pic2 <= 700 && pic2 >400){
 datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">";
 div.insertAdjacentHTML("beforeend",datas);
-}else{
+}else if(pic2 >=701){
   datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+pic+".jpg"+"\""+">";
+div.insertAdjacentHTML("beforeend",datas);
+}else if(pic2 >= 301 && pic2 <=400){
+  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+pic+".jpg"+"\""+">";
+div.insertAdjacentHTML("beforeend",datas);
+}else if(pic2 <=300){
+  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">";
 div.insertAdjacentHTML("beforeend",datas);
 }
 }
 best2 = best.replace("img","");
-if(best2 <= 700){
-datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+"class="+"\""+"best"+"\""+">";
-div.insertAdjacentHTML("afterbegin",datas);
-}else{
-  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+"class="+"\""+"best"+"\""+">";
-div.insertAdjacentHTML("afterbegin",datas);
+if(best2 <= 700 && best2 >400){
+datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+">";
+div.insertAdjacentHTML("beforeend",datas);
+}else if(best2 >=701){
+  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+">";
+div.insertAdjacentHTML("beforeend",datas);
+}else if(best2 >= 301 && best2 <=400){
+  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+">";
+div.insertAdjacentHTML("beforeend",datas);
+}else if(best2 <=300){
+  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+">";
+div.insertAdjacentHTML("beforeend",datas);
 }
 setTimeout(anit,1000);
 }
@@ -160,10 +172,10 @@ function ani(){
       if(branch  == 1){
         $("#load").animate({
             'opacity':0
-          },2000)    
+          },4000)    
       setTimeout(()=>{
         document.getElementById("load").display = "none";
-                  },2000)
+                  },4000)
               }else{
                 setTimeout(ani2,1000);
               }
@@ -192,10 +204,10 @@ function ani2(){
       if(branch  == 1){
         $("#load").animate({
             'opacity':0
-          },2000)    
+          },4000)    
           setTimeout(()=>{
 document.getElementById("load").display = "none";
-          },2000)
+          },4000)
       }else{
       setTimeout(ani,1000)
       }
@@ -211,18 +223,19 @@ function back(){
   bcount++;
   if(bcount == 1){
   $("#back").animate({
-    'width':"30vw"
+    'width':"25vw"
   },1000)
   $("#backm").animate({
-    'width':"30vw"
+    'width':"25vw"
   },1000)
-  document.getElementById("backm").innerHTML = "‹ Back"
-  document.getElementById("backm").style.fontSize = "7.5vw"
+  document.getElementById("backm").innerHTML = "‹ Back";
+  document.getElementById("backm").style.fontSize = "7.5vw";
+  document.getElementById("backm").style.marginTop = "1vw";
   setTimeout(()=>{
     bcheck = "ok";
   },1000)
 }else if(bcount >= 2 && bcheck == "ok"){{
-  document.cookie="message2=back-; max-age=5000";
+  document.cookie="message2=back-; Max-Age=5";
   location.href="index.html";
 }
 }
