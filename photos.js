@@ -238,7 +238,7 @@ function back(){
     bcheck = "ok";
   },1000)
 }else if(bcount >= 2 && bcheck == "ok"){{
-  document.cookie="message2=back-; Max-Age=5";
+  document.cookie="message2=back-; Max-Age=10";
   location.href="index.html";
 }
 }

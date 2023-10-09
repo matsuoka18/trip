@@ -354,7 +354,7 @@ $("#theme11").animate({
 scount2=0;
 function scroll2(){
   scount2++;
-  if(scount ==1){
+  if(scount2 ==1){
   place = "nara";
   $("#border2").animate({
     'left':'40vw',
@@ -535,6 +535,8 @@ function bcheck(){
     console.log("New");
     start();
   }else{
+    scount =2;
+    scount2 =2;
     c2 = cookie.indexOf("-",c1);
     data = cookie.substring(c1+9,c2);
     console.log("back:"+data);
