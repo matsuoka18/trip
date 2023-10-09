@@ -8,14 +8,14 @@ $(function(){
             start1();
         }else{
             console.log("yes")
-            num1++;
-            start();
+           /* num1++;
+            start();*/
         }
     });
 });
 
 function start(){
-    if(num1 == 1){
+    //if(num1 == 1){
         $("#border").animate({
         'left':'10vw'
     },{
@@ -51,9 +51,9 @@ function start(){
         'duration':2000
     })
     setTimeout(start2,2000)
-}else{
+  /*}else{
   
-}
+}*/
 }
 function start2(){
     setTimeout(()=>{
@@ -79,13 +79,13 @@ function start2(){
            'duration':2000
          })
          $("#d3").animate({
-            'height':'35vw',
+            'height':'37.5vw',
             'top':'-9.5vh'
          },{
            'duration':2000
          })
          $("#d4").animate({
-            'height':'35vw'
+            'height':'37.5vw'
          },{
            'duration':2000
         })
@@ -117,17 +117,17 @@ function start2(){
              $("#im").animate({
               'width':'60vw'
            },{
-            'duration':2000
+            'duration':3000
            })
            $("#swipe2").animate({
             'opacity':1
          },{
-          'duration':2000
+          'duration':3000
          })
          $("#swipe3").animate({
           'opacity':1
        },{
-        'duration':2000
+        'duration':3000
        })
            },2000)
          },2000)
@@ -198,13 +198,13 @@ function start22(){
            'duration':2000
          })
          $("#d33").animate({
-            'height':'35vw',
+            'height':'37.5vw',
             'top':'-9.5vh'
          },{
            'duration':2000
          })
          $("#d44").animate({
-            'height':'35vw'
+            'height':'37.5vw'
          },{
            'duration':2000
         })
@@ -292,7 +292,10 @@ if(0 < endx-startx){
 }
 }
 place = '';
+scount = 0
 function scroll(){
+  scount++;
+  if(scount == 1){
   place = "kyoto";
   $("#border").animate({
     'left':'40vw',
@@ -343,9 +346,15 @@ $("#theme11").animate({
  },{
    'duration':2000
  })
-},2000)
+},1000)
+  }else{
+
+  }
 }
+scount2=0;
 function scroll2(){
+  scount2++;
+  if(scount ==1){
   place = "nara";
   $("#border2").animate({
     'left':'40vw',
@@ -394,9 +403,14 @@ setTimeout(()=>{
    },{
      'duration':2000
    })
-  },2000)
+  },1000)
+}else{
+
+}
 }
 function scrollout(){
+  scount = 0;
+  scount2 = 0;
    $("#theme11").animate({
      'width':0,
      'left':'80vw',
@@ -519,6 +533,7 @@ function bcheck(){
   c1 = cookie.indexOf("message2=");
   if(c1 == -1){
     console.log("New");
+    start();
   }else{
     c2 = cookie.indexOf("-",c1);
     data = cookie.substring(c1+9,c2);
@@ -533,10 +548,6 @@ function bcheck(){
     document.getElementById("swipe").style.display = "none";
     document.getElementById("theme22").style.display = "block";
     document.getElementById("theme22").style.opacity = "1";
-    document.getElementById("theme2").style.display = "none";
-    document.getElementById("theme2").style.opacity = "0";
-    document.getElementById("theme22").style.display = "none";
-    document.getElementById("theme22").style.opacity = "0";
     document.getElementById("swipee").style.opacity = "0";
     document.getElementById("swipee").style.display = "none";
   }

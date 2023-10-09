@@ -79,6 +79,8 @@ console.log(theme2);
 console.log(best);
 document.getElementById("p1").innerHTML = theme;
 document.getElementById("p3").innerHTML = theme2;
+best2 = best.replace("img","");
+
 for(var a = 4; a<last; a++){
 pic = data[a];
 pic2 = pic.replace("img","");
@@ -96,20 +98,19 @@ div.insertAdjacentHTML("beforeend",datas);
 div.insertAdjacentHTML("beforeend",datas);
 }
 }
-best2 = best.replace("img","");
 if(best2 <= 700 && best2 >400){
-datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+">";
-div.insertAdjacentHTML("beforeend",datas);
-}else if(best2 >=701){
-  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+">";
-div.insertAdjacentHTML("beforeend",datas);
-}else if(best2 >= 301 && best2 <=400){
-  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+">";
-div.insertAdjacentHTML("beforeend",datas);
-}else if(best2 <=300){
   datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+">";
-div.insertAdjacentHTML("beforeend",datas);
-}
+  div.insertAdjacentHTML("afterbegin",datas);
+  }else if(best2 >=701){
+    datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+">";
+  div.insertAdjacentHTML("afterbegin",datas);
+  }else if(best2 >= 301 && best2 <=400){
+    datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+best+".jpg"+"\""+">";
+  div.insertAdjacentHTML("afterbegin",datas);
+  }else if(best2 <=300){
+    datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+best+".jpg"+"\""+">";
+  div.insertAdjacentHTML("afterbegin",datas);
+  }
 setTimeout(anit,1000);
 }
 function anit(){
@@ -205,10 +206,10 @@ function ani2(){
       if(branch  == 1){
         $("#load").animate({
             'opacity':0
-          },4000)    
+          },2000)    
           setTimeout(()=>{
 document.getElementById("load").display = "none";
-          },4000)
+          },2000)
       }else{
       setTimeout(ani,1000)
       }
@@ -224,14 +225,15 @@ function back(){
   bcount++;
   if(bcount == 1){
   $("#back").animate({
-    'width':"25vw"
+    'width':"27.5vw"
   },1000)
   $("#backm").animate({
-    'width':"25vw"
+    'width':"27.5vw"
   },1000)
-  document.getElementById("backm").innerHTML = "‹ Back";
-  document.getElementById("backm").style.fontSize = "7.5vw";
-  document.getElementById("backm").style.marginTop = "1vw";
+  document.getElementById("backt").innerHTML = "Back";
+  document.getElementById("backt").style.fontSize = "7.5vw";
+  document.getElementById("backt").style.marginTop = "1vw";
+
   setTimeout(()=>{
     bcheck = "ok";
   },1000)
