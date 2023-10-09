@@ -477,7 +477,7 @@ function b7(){
   if(place == 'kyoto'){
   document.cookie="message=b7-"
   }else{
-    document.cookie="message=b21-"
+    document.cookie="message=b22-"
   }
   scrollout();
 }
@@ -485,7 +485,7 @@ function b8(){
   if(place == 'kyoto'){
   document.cookie="message=b8-"
   }else{
-    document.cookie="message=b22-"
+    document.cookie="message=b23-"
   }
   scrollout();
 }
@@ -493,13 +493,16 @@ function b9(){
   if(place == 'kyoto'){
   document.cookie="message=b9-"
   }else{
-    document.cookie="message=b23-"
+    document.cookie="message=b24-"
   }
   scrollout();
 }
 function b10(){
- 
+ if(place == 'kyoto'){
   document.cookie="message=b10-"
+ }else{
+  document.cookie="message=b21-"
+ }
   scrollout();
 }
 function b11(){
@@ -548,6 +551,10 @@ function bcheck(){
     document.getElementById("theme2").style.opacity = "0";
     document.getElementById("swipe").style.opacity = "0";
     document.getElementById("swipe").style.display = "none";
+    document.getElementById("theme12").style.display = "none";
+    document.getElementById("theme12").style.opacity = "0";
+    document.getElementById("theme21").style.display = "none";
+    document.getElementById("theme21").style.opacity = "0";
     document.getElementById("theme22").style.display = "block";
     document.getElementById("theme22").style.opacity = "1";
     document.getElementById("swipee").style.opacity = "0";
