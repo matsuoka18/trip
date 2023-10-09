@@ -5,9 +5,11 @@ $(function(){
         if($(this).scrollTop() >= '750'){ 
             console.log("NO")
             num2++;
+            place = 'nara';
             start1();
         }else{
             console.log("yes")
+            place = 'kyoto';
            /* num1++;
             start();*/
         }
