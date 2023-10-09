@@ -8,6 +8,7 @@ function start(){
     c_check2 = cookie.indexOf("-",c_check);
     if(c_check == -1){
         console.log("cookie Error");
+        alert("このページはcookieを許可しない場合、適切に動作しません");
     }else{
         message = cookie.substring(c_check+8,c_check2);
         console.log("message:"+message);

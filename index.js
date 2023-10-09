@@ -79,13 +79,13 @@ function start2(){
            'duration':2000
          })
          $("#d3").animate({
-            'height':'42vw',
+            'height':'35vw',
             'top':'-9.5vh'
          },{
            'duration':2000
          })
          $("#d4").animate({
-            'height':'42vw'
+            'height':'35vw'
          },{
            'duration':2000
         })
@@ -198,13 +198,13 @@ function start22(){
            'duration':2000
          })
          $("#d33").animate({
-            'height':'42vw',
+            'height':'35vw',
             'top':'-9.5vh'
          },{
            'duration':2000
          })
          $("#d44").animate({
-            'height':'42vw'
+            'height':'35vw'
          },{
            'duration':2000
         })

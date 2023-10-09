@@ -97,7 +97,7 @@ border-bottom:0.5vw solid white;
 }
 .main .swip img{
     position:absolute;
-    bottom:5vh;
+    bottom:4vh;
     height:auto;
     width:0vw;
     opacity:1;
@@ -266,7 +266,7 @@ border-bottom:0.5vw solid white;
     }
     .main2 .swipp img{
         position:absolute;
-        bottom:5vh;
+        bottom:4vh;
         height:auto;
         width:0vw;
         opacity:1;
