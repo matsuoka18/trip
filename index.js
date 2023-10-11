@@ -2,7 +2,7 @@ num1 = 0;
 num2 = 0;
 $(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() >= '750'){ 
+        if($(this).scrollTop() >= '850'){ 
             console.log("NO")
             num2++;
             place = 'nara';
@@ -537,6 +537,7 @@ function bcheck(){
   //cookie = 'message=b1-,message2=back-';
   c1 = cookie.indexOf("message2=");
   if(c1 == -1){
+    place= 'kyoto';
     console.log("New");
     start();
   }else{
