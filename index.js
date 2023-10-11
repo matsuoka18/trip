@@ -543,6 +543,7 @@ function bcheck(){
   }else{
     scount =2;
     scount2 =2;
+    place= 'kyoto';
     c2 = cookie.indexOf("-",c1);
     data = cookie.substring(c1+9,c2);
     console.log("back:"+data);
