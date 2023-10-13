@@ -1,6 +1,7 @@
 body{
     background-color: #f5f5f7;
     background-color: #e7e7e7;
+    font-family: Georgia,serif;
 }
 img{
     width:100vw;
@@ -101,4 +102,28 @@ border-bottom:0.5vw solid white;
     width:40vw;
     height:20vh;
     border-left:1vw solid white;
+}
+.div2{
+    width:100vw;
+    height:30vh;
+    padding-top:5vh;
+    display: inline-block;
+}
+.div2 p{
+    font-family: Georgia,serif;
+    width:25vw;
+    text-align:center;
+    margin-left: 4.5vw;
+    margin-right: 4.55vw;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    padding-bottom: 2.5vh;
+    padding-top: 2.5vh;
+    font-size:4vw;
+    border-bottom:0.25vw solid black;
+    display: inline-block;
+}
+.div2 p:hover{
+    box-shadow: 0 0 10px 2px lightgray;
+    background-color:lightgray;
 }
