@@ -66,6 +66,7 @@ console.log("gas2 FIN");
 }
 branch = 0;
 function start2(data){
+document.getElementById("div2").style.opacity = 1;
     branch =1;
 last = data.length;
 console.log("last:"+last);
@@ -85,16 +86,16 @@ for(var a = 4; a<last; a++){
 pic = data[a];
 pic2 = pic.replace("img","");
 if(pic2 <= 700 && pic2 >400){
-datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">";
+  datas = "<div class="+"\""+"pice"+"\""+">"+"<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">"+"<p>"+theme+" | "+theme2+"</p><p>購入→</p></div>";
 div.insertAdjacentHTML("beforeend",datas);
 }else if(pic2 >=701){
-  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+pic+".jpg"+"\""+">";
+  datas = "<div class="+"\""+"pice"+"\""+">"+"<img src="+"\""+"https://canada-japan.github.io/pthos2/"+pic+".jpg"+"\""+">"+"<p>"+theme+" | "+theme2+"</p><p>購入→</p></div>";
 div.insertAdjacentHTML("beforeend",datas);
 }else if(pic2 >= 301 && pic2 <=400){
-  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos2/"+pic+".jpg"+"\""+">";
+  datas = "<div class="+"\""+"pice"+"\""+">"+"<img src="+"\""+"https://canada-japan.github.io/pthos2/"+pic+".jpg"+"\""+">"+"<p>"+theme+" | "+theme2+"</p><p>購入→</p></div>";
 div.insertAdjacentHTML("beforeend",datas);
 }else if(pic2 <=300){
-  datas = "<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">";
+  datas = "<div class="+"\""+"pice"+"\""+">"+"<img src="+"\""+"https://canada-japan.github.io/pthos/"+pic+".jpg"+"\""+">"+"<p>"+theme+" | "+theme2+"</p><p>購入→</p></div>";
 div.insertAdjacentHTML("beforeend",datas);
 }
 }
@@ -242,4 +243,16 @@ function back(){
   location.href="index.html";
 }
 }
+}
+function access(){
+  location.href="access.html";
+}
+function detail(){
+  location.href="detail.html";
+}
+function account(){
+  location.href="account.html";
+}
+function review(){
+  location.href="review.html";
 }
