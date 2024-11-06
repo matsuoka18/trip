@@ -341,3 +341,32 @@ border-bottom:0.5vw solid white;
         text-align: center;
         width:15vw;
     }
+    .main3{
+        width:100vw;
+        margin-top:1vh;
+        margin-bottom:2.5vh;
+        margin-left:5vw;
+    }
+    .main3 div{
+        width:30vw;
+        height:5vh;
+        text-align:center;
+        line-height:5vh;
+        display: inline-block;
+    }
+    .main3 .theme1 p{
+        border-left:1px solid black;
+    }
+   .main3 .theme2 p{
+    border-left:1px solid black;
+    border-right:1px solid black;
+   }
+   .main3 .theme3 p{
+    border-right:1px solid black;
+}
+.main3  p:nth-child(2){
+    color:lightgray;
+}
+.main3  p:nth-child(3){
+    color:lightgray;
+}

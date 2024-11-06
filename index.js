@@ -565,3 +565,7 @@ function bcheck(){
     document.getElementById("swipee").style.display = "none";
   }
 }
+
+function sct(){
+  location.href="sct.html";
+}
